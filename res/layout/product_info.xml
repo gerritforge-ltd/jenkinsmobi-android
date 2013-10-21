@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/lmitLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/mobiLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="onLmitLogoClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jenkinscloud" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/versionField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lmitLogo"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name_version"
+        android:textSize="16sp"
+        android:textStyle="bold" 
+        android:typeface="serif">
+    </TextView>
+    
+    <View 
+        android:id="@+id/ruler"
+        android:layout_below="@+id/versionField"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ABABAB" />
+    
+    <TextView
+        android:id="@+id/buildNumberField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ruler"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/deviceInfoField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buildNumberField"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/legalInfoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/black_button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/legal_button_title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

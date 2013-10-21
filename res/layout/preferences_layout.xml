@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="networkSettings"
+        android:title="@string/conf_network_section" >
+        <EditTextPreference
+            android:key="jenkins.url"
+            android:title="@string/conf_entry_hostname_hint" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="securitySettings"
+        android:title="@string/conf_security_section" >
+        <EditTextPreference
+            android:key="jenkins.username"
+            android:title="@string/conf_entry_username_hint" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="jenkins.password"
+            android:password="true"
+            android:title="@string/conf_entry_password_hint" >
+        </EditTextPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

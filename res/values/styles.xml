@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="FullScreenSplashImage" parent="@android:style/Theme.Light.NoTitleBar">
+
+	</style>
+	<style name="LighterBackgroundTheme" parent="@android:style/Theme.Light.NoTitleBar">
+	</style>
+	<style name="LighterBackgroundThemeWithTitleBar" parent="@android:style/Theme.Light">
+	</style>
+</resources>

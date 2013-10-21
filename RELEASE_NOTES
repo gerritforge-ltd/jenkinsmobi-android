@@ -1,0 +1,4 @@
+[Fixed in 3.0.2]
+1- Fixed multi-threading model to avoid app state corruption when data loading is 
+interrupted with back-key tap
+2- Audit agreement acceptance is no more mandatory to use the app

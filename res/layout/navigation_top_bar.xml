@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigationBar"
+    android:layout_width="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:background="@drawable/topbar"
+    android:orientation="horizontal"
+    android:paddingBottom="9dip"
+    android:paddingTop="9dip" >
+
+    <Button
+        android:id="@+id/navigationBarLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:layout_marginLeft="12dip"
+        android:background="@android:color/transparent" >
+    </Button>
+
+    <TextView
+        android:id="@+id/navigationBarTitle"
+        android:layout_height="fill_parent"
+        android:ellipsize="end"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textStyle="bold" >
+    </TextView>
+
+
+    <Button
+        android:id="@+id/navigationBarRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dip"
+        android:background="@android:color/transparent" >
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+bin/**/*
+bin/*
+gen/**/*
+gen/*
+dist/
+release/
+.settings/**/*
+.settings/*
+.DS_Store
+local.properties

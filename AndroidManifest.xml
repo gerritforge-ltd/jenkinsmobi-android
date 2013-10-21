@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lmit.jenkins.android.activity"
+    android:versionCode="17"
+    android:versionName="4.6.2" >
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name="com.lmit.jenkins.android.activity.JenkinsMobi"
+        android:debuggable="true"
+        android:icon="@drawable/jenkinsmobi_icon"
+        android:label="@string/app_name"
+        android:theme="@style/LighterBackgroundTheme" >
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="JenkinsMobi"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenSplashImage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+			    <category android:name="android.intent.category.DEFAULT" />
+			    <data android:scheme="jenkinsmobi" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HudsonDroidHomeActivity"
+            android:label="33Degree"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenSplashImage" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BrowserDisplay"
+            android:configChanges="orientation"
+            android:label="BrowserDisplay"
+            android:theme="@style/LighterBackgroundThemeWithTitleBar" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GenericListActivity"
+            android:configChanges="orientation"
+            android:label="GenericList" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LegalNoticeActivity"
+            android:configChanges="orientation"
+            android:label="LegalNotice" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="orientation"
+            android:label="Settings" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Configurator2Activity"
+            android:configChanges="orientation"
+            android:label="Configurator2" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lmit.jenkins.android.activity.ProductInfoActivity"
+            android:configChanges="orientation"
+            android:label="ProductInfo" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<supports-screens 
+    android:anyDensity="true" 
+    android:largeScreens="true"
+    android:normalScreens="true" 
+    android:smallScreens="true"
+    android:resizeable="true"/> 
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" >
+    </uses-sdk>
+
+</manifest>

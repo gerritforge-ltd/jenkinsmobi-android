@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:minHeight="50dp" >
+
+    <ImageView
+        android:id="@+id/fieldStatusIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" >
+    </ImageView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="105dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@+id/fieldStatusIcon"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/fieldDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fieldSubCaption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fieldValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/disclosureIcon"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:maxWidth="80dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/accessoryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/fieldDescription"
+        android:scaleType="centerInside"
+        android:visibility="gone" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/disclosureIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cell_discosure"
+        android:visibility="invisible" >
+    </ImageView>
+
+</RelativeLayout>

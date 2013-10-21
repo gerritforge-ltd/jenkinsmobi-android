@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script language="javascript">
+            function fetchNext(text, threadCount) {
+                if(text!="") {
+                    var e = document.getElementById("out");
+                    var p = document.createElement("DIV");
+                    e.appendChild(p);
+                    p.innerHTML = text;
+                    window.scrollTo(0,document.documentElement.scrollHeight);
+                }
+                if(threadCount<=0){
+                    hideSpinner();
+                }else{
+                    showSpinner();
+                }
+            }
+            
+            function hideSpinner(){
+                document.getElementById('spinner').style.visibility = 'hidden';            
+            }
+            
+            function showSpinner(){
+                document.getElementById('spinner').style.visibility = 'visible'; 
+            }
+            </script>
+        <title></title>
+    </head>
+    <body>
+        <pre id="out"></pre>
+        <div id="spinner">
+			<img src="spinner.gif"/>
+        </div>
+    </body>
+</html>

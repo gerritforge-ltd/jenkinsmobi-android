@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:minHeight="50dp" >
+
+    <TextView
+        android:id="@+id/fieldDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:maxWidth="180dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="23dp"
+        android:textSize="14sp" >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/disclosureIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/cell_discosure"
+        android:visibility="invisible" >
+    </ImageView>
+    
+    <ImageView
+        android:id="@+id/descriptionIcon"
+        android:layout_width="300dp"
+        android:layout_height="66dp"
+        android:scaleType="centerCrop"
+        android:cropToPadding="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/fieldDescription"
+        android:visibility="visible" >
+    </ImageView>
+
+</RelativeLayout>
